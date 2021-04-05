@@ -9,6 +9,8 @@ export const Container = ({
   wrap = false,
   split = false,
   center = false,
+  lastRight = false,
+  floaty = false,
   ...rest
 }) => (
   <div
@@ -20,6 +22,8 @@ export const Container = ({
       wrap && styles.wrap,
       split && styles.split,
       center && styles.center,
+      lastRight && styles.testright,
+      floaty && styles.floaty,
     ].filter(Boolean).join(' ')}
   >
     {children}

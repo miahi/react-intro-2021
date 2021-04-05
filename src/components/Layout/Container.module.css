@@ -41,3 +41,15 @@
         flex-flow: column nowrap;
     }
 }
+
+.testright button:last-child {
+    margin-left: auto;
+}
+
+.floaty {
+    overflow: hidden;
+    background-color: var(--color-background);
+    position: fixed; 
+    top: 0;
+    width: 100%;
+}

@@ -3,6 +3,8 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
+import MyBackButton from './components/BackButton';
+import HomeButton from './components/HomeButton';
 import { Container } from './components/Layout';
 import { ThemeToggleButton } from './components/ThemeToggleButton';
 import { ThemeProvider } from './contexts/theme';
@@ -15,10 +17,17 @@ function App() {
     <ThemeProvider>
       <Router>
         <div className="App">
+          <Container direction="horizontal" lastRight floaty>
+            <HomeButton />
+            <Switch>
+              <Route exact path="/" />
+              <Route path="/">
+                <MyBackButton />
+              </Route>
+            </Switch>
+            <ThemeToggleButton />
+          </Container>
           <Container direction="vertical">
-            <div>
-              <ThemeToggleButton />
-            </div>
             <Switch>
               <Route exact path="/movie/:id" component={MoviePage} />
               <Route exact path="/" component={HomePage} />

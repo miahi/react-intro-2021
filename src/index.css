@@ -8,6 +8,7 @@ body {
   background: var(--color-background);
   color: var(--color-text);
   transition: background var(--transition);
+  margin-top: 30px;
 }
 
 .mdi-icon {
