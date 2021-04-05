@@ -49,4 +49,5 @@ Style nav/app bar depending on scroll position:
 - page is scrolled (visually pleasing, tolerance to be decided)
     - background to shift
     - add box shadow
+    
 Bar should be fixed to top [done]
