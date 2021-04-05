@@ -36,17 +36,17 @@ Taken from: [https://gist.githubusercontent.com/sabinmarcu/f2e2a68ff36528965792e
 
 App / Navigation bar on the top of the page to contain:
 - left side
-    - link towards home (with react router)
-    - optional link that takes you back one link if not on the homepage
+    - link towards home (with react router) [done]
+    - optional link that takes you back one link if not on the homepage [done]
 - right side
-    - theme button
+    - theme button [done]
 
 ## Bonus points
 
 Style nav/app bar depending on scroll position:
-- top of the page (scrolled all the way up)
-    - background to match page background
+- top of the page (scrolled all the way up) [almost]
+    - background to match page background [done]
 - page is scrolled (visually pleasing, tolerance to be decided)
     - background to shift
     - add box shadow
-Bar should be fixed to top
+Bar should be fixed to top [done]
